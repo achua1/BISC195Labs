@@ -4,7 +4,7 @@ using Test
 
 @testset "Lab03" begin
     bases = collect("ATGC")
-
+ 
     # Test match score
     for base in bases
         @test nwscore(base, base) == 1
@@ -29,4 +29,10 @@ using Test
     for (base) in bases
       @test_throws ArgumentError nwscore(nothing, nothing)
     end
+
+    # Test nwalign
+    for base in bases
+    
 end
+
+@testset aatg and atag make a few strings tuple
